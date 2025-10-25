@@ -39,3 +39,8 @@ next-env.d.ts
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# IDEs and editors
+.vscode/
+SETUP.md
+migrations/

@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { ArrowLeft, Calendar, MapPin } from 'lucide-react'
 import Link from 'next/link'
+import { PlanPalChat } from '@/components/groups/PlanPalChat'
 
 export default async function GroupDetailPage({
   params,
@@ -36,6 +37,8 @@ export default async function GroupDetailPage({
 
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-6">
+            <PlanPalChat groupId={params.group_id} />
+
             <Card>
               <CardHeader>
                 <CardTitle>Current Poll</CardTitle>
